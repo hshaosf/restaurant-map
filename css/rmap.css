@@ -1,0 +1,39 @@
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+#map {
+  height: 100%;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#loading{
+  display: inline-block;
+  background: #cc0000;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.2em 1em;
+  position: fixed;
+  top: 0;
+  right: 0;
+  animation: blinker 1s linear infinite;
+}
+#legend{
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+  margin: 0.5em;
+  padding: 1em;
+}
+#legend div{
+  padding-top: 0.5em;
+}
+
+#legend div:first-child{
+  padding-top: 0;
+}
+
+@keyframes blinker{  
+  50% { opacity: 0; }
+}
