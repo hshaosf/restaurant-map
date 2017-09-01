@@ -34,6 +34,10 @@ html, body {
   padding-top: 0;
 }
 
+#legend.loaded{
+  cursor: pointer;
+}
+
 @keyframes blinker{  
   50% { opacity: 0; }
 }
